@@ -28,8 +28,6 @@ words_per_minute: # 200
 # MathJax equations, e.g. true
 mathjax: 
   enable: true
-  combo: "tex-svg"
-  tags: "ams"
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
@@ -94,8 +92,8 @@ defaults:
 author:
   name: Bruno Alvarez
   picture: "/assets/img/bruno.jpeg"
-  email:
-  twitter:
+  email: brunoalvarez89@gmail.com
+  twitter: https://twitter.com/brunoalvarez89
   links:
     - title:
       url:
