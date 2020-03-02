@@ -53,8 +53,8 @@ feed:
 # paginate_path: /page:num/
 
 # Search
-search_full_content: false # can have performance implications for large sites
-
+search_full_content: true # can have performance implications for large sites
+search: true
 # Taxonomy pages
 # category_archive_path: "/categories/#"
 # tag_archive_path: "/tags/#"
