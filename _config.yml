@@ -86,13 +86,7 @@ defaults:
     values:
       layout: post
       share: true
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      share: true
-
+      
 # Site Author
 author:
   name: Bruno Alvarez
