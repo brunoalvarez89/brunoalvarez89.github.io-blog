@@ -53,8 +53,8 @@ feed:
 # paginate_path: /page:num/
 
 # Search
-search_full_content: true # can have performance implications for large sites
-search: true
+search_full_content: false # can have performance implications for large sites
+search: false
 # Taxonomy pages
 # category_archive_path: "/categories/#"
 # tag_archive_path: "/tags/#"
@@ -80,6 +80,12 @@ plugins:
 # Front Matter Defaults
 defaults:
   # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
   - scope:
       path: "_posts"
       type: posts
