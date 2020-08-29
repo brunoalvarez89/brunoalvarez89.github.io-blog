@@ -1,0 +1,13 @@
+---
+title: "The Perceptron 2"
+image:
+  path: /assets/img/posts/sample-quaternions.jpg
+  thumbnail: /assets/img/posts/sample-quaternions.jpg
+categories:
+  - Machine Learning2
+tags:
+  - Perceptron2
+---
+# What do we mean by Perceptron 2
+
+$$a^2 + b^2 = c^2$$
