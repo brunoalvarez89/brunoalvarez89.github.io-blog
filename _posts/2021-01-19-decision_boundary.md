@@ -5,8 +5,9 @@ image:
   thumbnail: /assets/img/posts/sample-quaternions.jpg
 categories:
   - Machine Learning
+  - Classification
 tags:
-  - Perceptron
+  - Plotting
 ---
 # What do we mean by Perceptron
 
