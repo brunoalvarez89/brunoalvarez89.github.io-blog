@@ -1,5 +1,5 @@
 ---
-title: "The Perceptron"
+title: "Plotting Decision Boundaries"
 image:
   path: /assets/img/posts/sample-quaternions.jpg
   thumbnail: /assets/img/posts/sample-quaternions.jpg
