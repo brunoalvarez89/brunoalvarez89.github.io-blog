@@ -21,7 +21,7 @@ title: "The Code Roamer"
 description: "Pythonic explorations on Machine Learning and Math"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/assets/img/logo.png"
+logo: "/assets/img/logo.gif"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
 words_per_minute: # 200
