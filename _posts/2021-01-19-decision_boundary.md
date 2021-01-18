@@ -9,6 +9,6 @@ categories:
 tags:
   - Plotting
 ---
-# What do we mean by Perceptron
+In the task of showing boundaries.
 
 $$a^2 + b^2 = c^2$$
