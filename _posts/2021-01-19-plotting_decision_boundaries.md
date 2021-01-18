@@ -5,7 +5,6 @@ image:
   thumbnail: /assets/img/posts/sample-quaternions.jpg
 categories:
   - Machine Learning
-  - Classification
 tags:
   - Plotting
 ---
