@@ -168,7 +168,7 @@ labels_mesh = labels_grid.reshape(x_mesh.shape)
 
 And now everything is square. 
 
-We can proceed to plot our boundaries using the `pcolormesh()` function (Note: before using this function, I tried for hours to make `contourf()` work properly with the colormaps, but I just could not do it, so it opted for `pcolormesh()`).
+We can proceed to plot our boundaries using the `pcolormesh()` function (Note: before using this function, I tried for hours to make `contourf()` work properly with the colormaps, but I just could not do it, so I opted for `pcolormesh()`).
 
 ```python
 plt.figure(figsize=(15,8), facecolor="white")
