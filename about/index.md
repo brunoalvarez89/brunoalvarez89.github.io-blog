@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Hi :)
+title: 
 ---
 
-# Thanks for stepping by!
+## Thanks for stepping by!
 
 
