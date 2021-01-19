@@ -1,8 +1,8 @@
 ---
 title: "Plotting decision boundaries"
 image:
-  path: /assets/img/posts/decision_boundaries.jpg
-  thumbnail: /assets/img/posts/decision_boundaries.jpg
+  path: /assets/img/posts/decision_boundaries_full.jpg
+  thumbnail: /assets/img/posts/decision_boundaries_full.jpg
 categories:
   - Machine Learning
 tags:
@@ -178,4 +178,61 @@ plt.tight_layout()
 
 ![decision_boundaries.jpg](/assets/img/posts/decision_boundaries.jpg)
 
+What a beautiful [Voronoi tessellation](https://en.wikipedia.org/wiki/Voronoi_diagram)!
 
+Now we will put everything together into a nice `plot_decision_boundaries_2d()` function that will plot the decision boundaries together with the clustering output and save the result to an image in the local folder. The arguments of this function are going to be:
+
+* **X**: input data
+* **classifier**: classifier that will predict the input data
+* **extra_margin**: additional boundaries margin (default = 0.05)
+* **sampling_interval**: axis discretization (default = 0.05)
+* **cmap**: colormap for plotting (default = "Set3"; "rainbow" and "prism" look pretty nice too)
+* **dpi**: dpi of the output image (default = 200)
+* **plot_name**: name and format of the output image (default = "decision_boundaries.jpg")
+
+```python
+def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_interval=0.05, cmap="Set3", dpi=200, plot_name="decision_boundaries.jpg"):
+
+    # get grid boundaries
+    x_min = np.min(X[:,0])
+    y_min = np.min(X[:,1])
+    x_max = np.max(X[:,0])
+    y_max = np.max(X[:,1])
+
+    # get expanded grid axes
+    x_axis = np.arange(x_min*(1+extra_margin), x_max*(1+extra_margin), sampling_interval)
+    y_axis = np.arange(y_min*(1+extra_margin), y_max*(1+extra_margin), sampling_interval)
+
+    # generate (x,y) mesh
+    x_mesh, y_mesh = np.meshgrid(x_axis, y_axis)
+
+    # flatten mesh
+    x_mesh_flatten = x_mesh.flatten()
+    y_mesh_flatten = y_mesh.flatten()
+
+    # reshape mesh
+    x_mesh_flatten_reshape = x_mesh_flatten.reshape((x_mesh_flatten.shape[0],1))
+    y_mesh_flatten_reshape = y_mesh_flatten.reshape((y_mesh_flatten.shape[0],1))
+    
+    # get grid input
+    X_grid = np.hstack((x_mesh_flatten_reshape,y_mesh_flatten_reshape))
+
+    # predict grid and convert predictions to a mesh (for plotting)
+    labels_grid = classifier.predict(X_grid)
+    labels_mesh = labels_grid.reshape(x_mesh.shape)
+
+    # plot everything, format and save
+    plt.figure(figsize=(15,8), facecolor="white")
+    plt.pcolormesh(x_mesh, y_mesh, labels_mesh, cmap=cmap, alpha=0.1, shading="gouraud", zorder=0)
+    plt.scatter(X[:,0], X[:,1], c=labels, cmap=cmap, alpha=0.9, s=150, edgecolor="black", zorder=2)
+    plt.tight_layout()
+    plt.savefig(plot_name, dpi=dpi)
+````
+
+Finally, let's call the function with our data, our K-means algorithm, and the other options set to default
+
+```python
+plot_decision_boundaries_2d(X, kmeans) 
+```
+
+![decision_boundaries_full.jpg](/assets/img/posts/decision_boundaries_full.jpg)
