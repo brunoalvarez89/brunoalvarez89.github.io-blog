@@ -86,13 +86,6 @@ defaults:
     values:
       layout: post
       share: true
- # Posts defaults
-  - scope:
-      path: "_about"
-      type: posts
-    values:
-      layout: post
-      share: true
       
 # Site Author
 author:
