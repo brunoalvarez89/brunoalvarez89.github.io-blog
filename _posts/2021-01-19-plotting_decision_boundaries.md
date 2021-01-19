@@ -1,8 +1,8 @@
 ---
 title: "Plotting decision boundaries"
 image:
-  path: /assets/img/posts/decision_boundaries_full.jpg
-  thumbnail: /assets/img/posts/decision_boundaries_full.jpg
+  path: /assets/img/posts/decision_boundaries_full_header.jpg
+  thumbnail: /assets/img/posts/decision_boundaries_full_header.jpg
 categories:
   - Machine Learning
 tags:
