@@ -26,7 +26,7 @@ X, _ = make_blobs(n_samples=n_samples, centers=n_blobs, n_features=n_features, r
 ```
 As we can see, we have now some collection of 2-dimensional points
 
-```python
+```
 >>> X[:10]
 array([[  4.4016599 ,  -9.42456185],
        [ -6.70699928,  -8.43356401],
