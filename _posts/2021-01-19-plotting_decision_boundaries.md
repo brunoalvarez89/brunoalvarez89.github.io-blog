@@ -8,7 +8,6 @@ categories:
 tags:
   - Plotting
 ---
-$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
 When working with classification problems in Machine Learning, a common (and very useful) thing to do is to plot the decision boundaries of our classifiers. This helps us to discern which regions of our feature space are going to be assigned a given class.
 
@@ -82,9 +81,9 @@ plt.tight_layout()
 
 Let's work now on building our decision boundaries plot.
 
-The main idea is to use our classifier (in this case, a trained K-means clustering algorithm) to predict a **grid** from the input space. Since our input data lies on 2 dimensions, our grid is going to be 2-dimensional ($R^2$).
+The main idea is to use our classifier (in this case, a trained K-means clustering algorithm) to predict a **grid** from the input space. Since our input data lies on 2 dimensions, our grid is going to be 2-dimensional ($$R^2$$).
 
-Let's start with importing stuff and then defining the minimum and maximum $(x,y)$ pairs of our grid (these will correspond to the lower-left and upper-right vertices of the grid/rectangle). To do this, we will just extract the minimum and maximum $x$ and $y$ values from our input data.
+Let's start with importing stuff and then defining the minimum and maximum $$(x,y)$$ pairs of our grid (these will correspond to the lower-left and upper-right vertices of the grid/rectangle). To do this, we will just extract the minimum and maximum $$x$$ and $$y$$ values from our input data.
 
 ```python
 import numpy as np
