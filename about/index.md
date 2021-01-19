@@ -1,8 +1,6 @@
 ---
 layout: page
-title:  
+title: Hi :)
 ---
 
 # Hi!
-## Hi!!
-### Hi!!!
