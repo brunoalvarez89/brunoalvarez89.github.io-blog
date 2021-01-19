@@ -11,4 +11,8 @@ I have always had a passion for computers. I still remember how obsessed I was w
 
 This site was created with the intent of sharing my walkabouts on math and code. Its name tries to capture the sense of wander I get when researching interesting subjects (also codewanderer.com was already registered :P).
 
-You can download my CV here. My Google Scholar can be found here. Also, Feel free to connect with me on Linkedin and ResearchGate.
+See you around!
+
+# Contact info
+You can download my CV here. My Google Scholar profile can be found here. Also, Feel free to connect with me on Linkedin and ResearchGate.
+
