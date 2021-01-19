@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About the Jekyll Theme
-suntitle: Hi
+subtitle: Hi
 ---
 
 Llalalalaazxx
