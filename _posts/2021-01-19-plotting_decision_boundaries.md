@@ -8,6 +8,7 @@ categories:
 tags:
   - Plotting
 ---
+$ a^2 $
 
 When working with classification problems in Machine Learning, a common (and very useful) thing to do is to plot the decision boundaries of our classifiers. This helps us to discern which regions of our feature space are going to be assigned a given class.
 
