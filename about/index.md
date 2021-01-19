@@ -13,6 +13,6 @@ This site was created with the intent of sharing my walkabouts on math and code.
 
 See you around!
 
-# Contact info
+## Contact info
 You can download my CV here. My Google Scholar profile can be found here. Also, Feel free to connect with me on Linkedin and ResearchGate.
 
