@@ -15,7 +15,7 @@ To me, the available literature regarding this procedure tends to be poorly expl
 
 So, let's start. Since we are going to be playing around with classifiers, let's first generate some sample input data in 2 dimensions. For this, we are going to use the function `make_blobs()` from the `skearn.datasets` package, to which we are going to ask to create five 2-dimensional blobs (or centroids) of 200 points each
 
-`python
+```python
 from sklearn.datasets import make_blobs
 
 n_blobs = 5
@@ -23,7 +23,7 @@ n_features = 2
 n_samples = n_blobs*200
 
 X, _ = make_blobs(n_samples=n_samples, centers=n_blobs, n_features=n_features, random_state=10)
-`
+```
 
 As we can see, we have now some collection of 2-dimensional points
 
@@ -63,4 +63,35 @@ kmeans = KMeans(n_clusters=n_blobs, random_state=10).fit(X)
 labels = kmeans.labels_
 ```
 
-labels[:10]
+```
+>>> labels[:10]
+array([0, 4, 1, 0, 1, 2, 2, 2, 0, 4], dtype=int32)
+```
+
+Let's see how the clustering looks like
+
+```python
+plt.figure(figsize=(15,8), facecolor="white")
+plt.scatter(X[:,0], X[:,1], c=labels, cmap="Set3", alpha=0.85, s=150, edgecolor="black")
+plt.title("Sample data (clustered)", size=30)
+plt.tight_layout()
+```
+
+![sample_data_clustered.jpg](/assets/img/posts/sample_data_clustered.jpg)
+
+Let's work now on building our decision boundaries plot.
+
+The main idea is to use our classifier (in this case, a trained K-means clustering algorithm) to predict a **grid** from the input space. Since our input data lies on 2 dimensions, our grid is going to be 2-dimensional ($R^2$).
+
+Let's start with importing stuff and then defining the minimum and maximum $(x,y)$ pairs of our grid (these will correspond to the lower-left and upper-right vertices of the grid/rectangle). To do this, we will just extract the minimum and maximum $x$ and $y$ values from our input data.
+
+```python
+import numpy as np
+
+x_min = np.min(X[:,0])
+y_min = np.min(X[:,1])
+x_max = np.max(X[:,0])
+y_max = np.max(X[:,1])
+
+(x_min, y_min), (x_max, y_max)
+```
