@@ -10,7 +10,7 @@ I am Bruno, from Buenos Aires, Argentina. I am currently a PhD student at the Un
 I have always had a passion for computers. I still remember my obsession with mIRC scripting and aSCII art back in the 90's. Back then, a perfect evening loked something like this:
 
 ![mirc.gif](/about/mirc.gif)
-([source: ](https://rjnpages.tripod.com/mp3tutor/useirc.htm))
+([source](https://rjnpages.tripod.com/mp3tutor/useirc.htm))
 
 Later on, I stumbled upon science and research, and both worlds sticked together until today.
 
