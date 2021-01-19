@@ -54,7 +54,7 @@ plt.tight_layout()
 
 ![sample_data.jpg](/assets/img/posts/sample_data.jpg)
 
-Now we are going to cluster this data using the [K-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering), provided in the `sklearn.cluster` package. This will assign each blob a proper class or label. For this, we are just going to use our known quantity of blobs (5) as the value of $k$.
+Now we are going to cluster this data using the [K-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering), provided in the `sklearn.cluster` package. This will assign each blob a proper class or label. For this, we are just going to use our known quantity of blobs (5) as the value of $$k$$.
 
 ```python
 from sklearn.cluster import KMeans
