@@ -11,11 +11,11 @@ tags:
 
 When working with classification problems in Machine Learning, a common (and very useful) thing to do is to plot the decision boundaries of our classifiers. This helps us to discern which regions of our feature space are going to be assigned a given class.
 
-To me, the available literature regarding this procedure tends to be poorly explained, and the associated code can be quite cryptic too (as an example, the official guidelines from scikit-learn can be found [here](https://scikit-learn.org/stable/auto_examples/tree/plot_iris_dtc.html) and [here](https://scikit-learn.org/stable/auto_examples/ensemble/plot_voting_decision_regions.html) ). This, together with the fact that other available sources tend to be slightly-modified, copy-pasted versions of the previously mentioned links ([here](https://towardsdatascience.com/easily-visualize-scikit-learn-models-decision-boundaries-dd0fb3747508), [here](https://gist.github.com/anandology/772d44d291a9daa198d4), [here](https://stackoverflow.com/questions/51297423/plot-scikit-learn-sklearn-svm-decision-boundary-surface) and [here](https://www.kaggle.com/arthurtok/decision-boundaries-visualised-via-python-plotly)), and that other sources that massage a little bit more the examples tend to overlook the caveats of matching color palettes between different `matplotlib` functions as `scatter()` and `contourf()` ([here](https://hackernoon.com/how-to-plot-a-decision-boundary-for-machine-learning-algorithms-in-python-3o1n3w07)), motivated me to understand the process better and provide some code so we can all always come back here to pick the right function to do the work :)
+To me, the available literature regarding this procedure tends to be poorly explained, and the associated code can be quite cryptic too (as an example, the official guidelines from scikit-learn can be found [here](https://scikit-learn.org/stable/auto_examples/tree/plot_iris_dtc.html) and [here](https://scikit-learn.org/stable/auto_examples/ensemble/plot_voting_decision_regions.html) ). This, together with the fact that other available sources tend to be slightly-modified, copy-pasted versions of the previously mentioned links ([here](https://towardsdatascience.com/easily-visualize-scikit-learn-models-decision-boundaries-dd0fb3747508), [here](https://gist.github.com/anandology/772d44d291a9daa198d4), [here](https://stackoverflow.com/questions/51297423/plot-scikit-learn-sklearn-svm-decision-boundary-surface) and [here](https://www.kaggle.com/arthurtok/decision-boundaries-visualised-via-python-plotly)), and that other sources that massage a little bit more the examples tend to overlook the caveats of matching color palettes between different `matplotlib` functions as `scatter()` and `contourf()` ([here](https://hackernoon.com/how-to-plot-a-decision-boundary-for-machine-learning-algorithms-in-python-3o1n3w07)), motivated me to understand the process better and provide some code so we all can always come back here to pick the right function to do the work :)
 
 So, let's start. Since we are going to be playing around with classifiers, let's first generate some sample input data in 2 dimensions. For this, we are going to use the function `make_blobs()` from the `skearn.datasets` package, to which we are going to ask to create five 2-dimensional blobs (or centroids) of 200 points each
 
-```python
+`python
 from sklearn.datasets import make_blobs
 
 n_blobs = 5
@@ -23,7 +23,8 @@ n_features = 2
 n_samples = n_blobs*200
 
 X, _ = make_blobs(n_samples=n_samples, centers=n_blobs, n_features=n_features, random_state=10)
-```
+`
+
 As we can see, we have now some collection of 2-dimensional points
 
 ```
@@ -53,3 +54,13 @@ plt.tight_layout()
 
 ![sample_data.jpg](/assets/img/posts/sample_data.jpg)
 
+Now we are going to cluster this data using the [K-means algorithm](https://en.wikipedia.org/wiki/K-means_clustering), provided in the `sklearn.cluster` package. This will assign each blob a proper class or label. For this, we are just going to use our known quantity of blobs (5) as the value of $k$.
+
+```python
+from sklearn.cluster import KMeans
+
+kmeans = KMeans(n_clusters=n_blobs, random_state=10).fit(X)
+labels = kmeans.labels_
+```
+
+labels[:10]
