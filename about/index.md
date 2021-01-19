@@ -14,5 +14,5 @@ This site was created with the intent of sharing my walkabouts on math and code.
 See you around!
 
 ### Contact info
-You can download my CV here. My Google Scholar profile can be found here. Also, Feel free to connect with me on Linkedin and ResearchGate.
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/brunoalvarez89/) and [ResearchGate](https://www.researchgate.net/profile/Bruno_Alvarez). My Google Scholar profile can be found [here](https://scholar.google.com/citations?user=Gr1PT-4AAAAJ&hl=es). You can download my CV [here](https://docs.google.com/document/d/17KrMikcjI6VoxRozAMXe4at1r143-qN3pMmq7aFscLw/edit?usp=sharing). 
 
