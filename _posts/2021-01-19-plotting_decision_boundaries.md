@@ -126,7 +126,7 @@ x_mesh, y_mesh = np.meshgrid(x_axis, y_axis)
 ((432, 363), (432, 363))
 ```
 
-Now we need to feed this to our K-means. The problem is that the mesh format is not the appropriate one to feed to the algorithm! We need $$(x,y)$$ pairs, so let's construct them.
+Now we need to feed this to our K-means. The problem is that the mesh format is not the appropriate one! We need $$(x,y)$$ pairs, so let's construct them.
 
 First, we flatten our meshes into 1-dimensional arrays
 
@@ -135,7 +135,7 @@ x_mesh_flatten = x_mesh.flatten()
 y_mesh_flatten = y_mesh.flatten()
 ```
 
-Then, we reshape them to column vectors
+Then, we reshape them into column vectors
 
 ```python
 x_mesh_flatten_reshape = x_mesh_flatten.reshape((x_mesh_flatten.shape[0],1))
