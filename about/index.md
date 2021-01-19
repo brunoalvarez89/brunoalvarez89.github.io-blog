@@ -7,7 +7,7 @@ Thanks for stopping by!
 
 I am Bruno, from Buenos Aires, Argentina. I am currently a PhD student at the Universidad Nacional de San Martín, in Buenos Aires, where I develop neural network models to predict the immune response in mammals.
 
-I have always had a passion for computers. I still remember my obsession with mIRC scripting and aSCII art back in the 90's. Back then, a perfect evening loked something like this:
+I have always had a passion for computers. I still remember my obsession with [mIRC scripting](https://en.wikipedia.org/wiki/MIRC_scripting_language) and [ASCII art](https://en.wikipedia.org/wiki/ASCII_art) back in the 90's. Back then, a perfect evening loked something like this:
 
 ![mirc.png](/about/mirc.png)
 ([source](https://rjnpages.tripod.com/mp3tutor/useirc.htm))
