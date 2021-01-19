@@ -1,5 +1,5 @@
 ---
-title: "Plotting Decision Boundaries"
+title: "Plotting decision boundaries"
 image:
   path: /assets/img/posts/decision_boundaries.jpg
   thumbnail: /assets/img/posts/decision_boundaries.jpg
