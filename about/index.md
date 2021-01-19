@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: ‎
 ---
 
 ## Thanks for stepping by!
