@@ -3,4 +3,6 @@ layout: page
 title: Hi :)
 ---
 
-# Hi!
+# Thanks for stepping by!
+
+
