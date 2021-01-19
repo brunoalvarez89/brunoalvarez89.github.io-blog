@@ -28,7 +28,6 @@ As we can see, we have now some collection of 2-dimensional points
 
 ```
 >>> X[:10]
-
 array([[  4.4016599 ,  -9.42456185],
        [ -6.70699928,  -8.43356401],
        [ -6.25332117,   5.01582549],
@@ -40,3 +39,17 @@ array([[  4.4016599 ,  -9.42456185],
        [  6.25341149, -11.53947313],
        [ -8.3710159 ,  -7.91311993]])
 ```
+
+Let's visualize these blobs as a scatter plot
+
+```python
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(15,8), facecolor="white")
+plt.scatter(X[:,0], X[:,1], alpha=0.85, s=150, edgecolor="black")
+plt.title("Sample data", size=30)
+plt.tight_layout()
+```
+
+![sample_data.jpg](/assets/img/posts/sample_data.jpg)
+
