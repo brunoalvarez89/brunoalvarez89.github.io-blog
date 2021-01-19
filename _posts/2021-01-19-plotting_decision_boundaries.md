@@ -28,6 +28,7 @@ As we can see, we have now some collection of 2-dimensional points
 
 ```
 >>> X[:10]
+
 array([[  4.4016599 ,  -9.42456185],
        [ -6.70699928,  -8.43356401],
        [ -6.25332117,   5.01582549],
