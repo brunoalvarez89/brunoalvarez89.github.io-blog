@@ -187,11 +187,12 @@ Now we will put everything together into a nice `plot_decision_boundaries_2d()` 
 * **extra_margin**: additional boundaries margin (default = 0.05)
 * **sampling_interval**: axis discretization (default = 0.05)
 * **cmap**: colormap for plotting (default = "Set3"; "rainbow" and "prism" look pretty nice too)
+* **marker_size**: size of the scatter points (default = 150)
 * **dpi**: dpi of the output image (default = 200)
 * **plot_name**: name and format of the output image (default = "decision_boundaries.jpg")
 
 ```python
-def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_interval=0.05, cmap="Set3", dpi=200, plot_name="decision_boundaries.jpg"):
+def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_interval=0.05, cmap="Set3", marker_size=150, dpi=200, plot_name="decision_boundaries.jpg"):
 
     # get grid boundaries
     x_min = np.min(X[:,0])
@@ -227,7 +228,7 @@ def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_inter
     # plot everything, format and save
     plt.figure(figsize=(15,8), facecolor="white")
     plt.pcolormesh(x_mesh, y_mesh, labels_mesh, cmap=cmap, alpha=0.1, shading="gouraud", zorder=0)
-    plt.scatter(X[:,0], X[:,1], c=labels, cmap=cmap, alpha=0.9, s=150, edgecolor="black", zorder=2)
+    plt.scatter(X[:,0], X[:,1], c=labels, cmap=cmap, alpha=0.9, s=marker_size, edgecolor="black", zorder=2)
     plt.tight_layout()
     plt.savefig(plot_name, dpi=dpi)
 ````
