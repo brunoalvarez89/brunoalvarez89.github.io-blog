@@ -221,6 +221,9 @@ def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_inter
     labels_grid = classifier.predict(X_grid)
     labels_mesh = labels_grid.reshape(x_mesh.shape)
 
+    # predict input data X
+    labels = classifier.predict(X)
+    
     # plot everything, format and save
     plt.figure(figsize=(15,8), facecolor="white")
     plt.pcolormesh(x_mesh, y_mesh, labels_mesh, cmap=cmap, alpha=0.1, shading="gouraud", zorder=0)
