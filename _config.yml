@@ -24,7 +24,7 @@ url: # the base hostname & protocol for your site e.g. "https://mmistakes.github
 logo: "/assets/img/logo.gif"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
-words_per_minute: 50
+words_per_minute: 70
 # MathJax equations, e.g. true
 mathjax: true
 google_fonts:
