@@ -200,8 +200,8 @@ def plot_decision_boundaries_2d(X, classifier, extra_margin=0.05, sampling_inter
     y_max = np.max(X[:,1])
 
     # get expanded grid axes
-    x_axis = np.arange(x_min*(1+extra_margin), x_max*(1+extra_margin), sampling_interval)
-    y_axis = np.arange(y_min*(1+extra_margin), y_max*(1+extra_margin), sampling_interval)
+    x_axis = np.arange(x_min-np.abs(x_min)*extra_margin, x_max+np.abs(x_min)*extra_margin, sampling_interval)
+    y_axis = np.arange(y_min-np.abs(y_min)*extra_margin, y_max+np.abs(y_min)*extra_margin, sampling_interval)
 
     # generate (x,y) mesh
     x_mesh, y_mesh = np.meshgrid(x_axis, y_axis)
