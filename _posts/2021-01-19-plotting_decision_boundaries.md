@@ -104,8 +104,8 @@ The first step to generate our rectangular grid is to define the sides of our re
 extra_margin = 0.05
 sampling_interval = 0.05
 
-x_axis = np.arange(x_min*(1+extra_margin), x_max*(1+extra_margin), sampling_interval)
-y_axis = np.arange(y_min*(1+extra_margin), y_max*(1+extra_margin), sampling_interval)
+ x_axis = np.arange(x_min-np.abs(x_min)*extra_margin, x_max+np.abs(x_min)*extra_margin, sampling_interval)
+ y_axis = np.arange(y_min-np.abs(y_min)*extra_margin, y_max+np.abs(y_min)*extra_margin, sampling_interval)
 ```
 ```
 >>> x_axis.shape, y_axis.shape
