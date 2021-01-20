@@ -15,7 +15,7 @@ To me, the available literature regarding this procedure tends to be poorly expl
 
 So, let's start. Since we are going to be playing around with classifiers, let's first generate some sample input data in 2 dimensions. For this, we are going to use the function `make_blobs()` from the `skearn.datasets` package, to which we are going to ask to create five 2-dimensional blobs (or centroids) of 200 points each
 
-```python3
+```python
 from sklearn.datasets import make_blobs
 
 n_blobs = 5
