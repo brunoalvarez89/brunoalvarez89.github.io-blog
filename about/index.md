@@ -5,7 +5,7 @@ title: Hi :)
 
 Thanks for stopping by!
 
-I am Bruno, from Buenos Aires, Argentina. I am currently a PhD fellow at the Universidad Nacional de San Martín, in Buenos Aires, where I develop neural network models to predict the immune response in mammals.
+My name is Bruno, and I am from Buenos Aires, Argentina. I am currently a PhD fellow at the Universidad Nacional de San Martín, in Buenos Aires, where I develop neural network models to predict the immune response in mammals.
 
 I have always had a passion for computers. I still remember being this 90's kid, obsessed with [mIRC scripting](https://en.wikipedia.org/wiki/MIRC_scripting_language), [ASCII art](https://en.wikipedia.org/wiki/ASCII_art) and the [early WWW](https://www.youtube.com/embed/s1_yx_Eg9v4?start=46&end=51). Later on, I stumbled upon science and research, and both worlds sticked together up to today. 
 
